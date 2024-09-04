@@ -1,0 +1,91 @@
+@use './mixins' as *;
+
+%include-bg{
+	@include background();
+}
+
+%arc-transition{
+	@include arc-transition();
+}
+
+%arc-transition-common{
+	@include arc-transition();
+}
+
+%arc-transition-color{
+	@include arc-transition(color);
+}
+
+%arc-transition-transform{
+	@include arc-transition(transform);
+}
+
+%arc-transition-border-color{
+	@include arc-transition(border-color);
+}
+
+%arc-transition-bg-color{
+	@include arc-transition(backgroud-color);
+}
+
+%arc-transition-fz{
+	@include arc-transition(font-size);
+}
+
+
+// svg
+
+%arc-svg-y-1{
+	@include transform(translateY(-1px));
+}
+
+%arc-svg-y-2{
+	@include transform(translateY(-2px));
+}
+
+%arc-svg-y-3{
+	@include transform(translateY(-3px));
+}
+
+%arc-svg-y-4{
+	@include transform(translateY(-4px));
+}
+
+
+// font
+
+%arc-ff-roboto{
+	font-family: var(--arc-ff-roboto);
+}
+
+%arc-ff-jost{
+	font-family: var(--arc-ff-jost);
+}
+
+%arc-ff-fontawesome{
+	font-family: var(--arc-ff-fontawesome);
+}
+
+
+/* transform */
+%translateY1_2{
+	@include transform(translateY(-50%));
+}
+%translateX1_2{
+	@include transform(translateX(-50%));
+}
+%translate1_2{
+	@include transform(translate(-50%, -50%));
+}
+
+
+// bg thumbnails
+
+%bg-thumb{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
